@@ -1,0 +1,84 @@
+POST http://localhost:3001/register
+Content-Type: application/json
+
+ { "name": "John Doe", "email": "john@example.com", "password": "password123", "role": "Normal User" }
+
+###
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "name": "Jaya",
+    "email": "Jaya@gmail.com",
+    "password": "Sri@123",
+    "address": "203 Owner Street",
+    "role": "User"
+}
+
+###
+
+###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+ { "email": "Jaya@gmail.com", "password": "Sri@123" }
+
+###
+POST http://localhost:3001/stores
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzQzNTM1MDI1LCJleHAiOjE3NDM1Mzg2MjV9.Hk2SaynvHZihkSYHSJ3UqBWoyRRDLVXoI1AI3Ije17g
+
+ {
+        "name": "jio Stores",
+        "email": "jio@sportselite.com",
+        "address": "534 Fitness Boulevard, Stadium Area"
+}
+###
+GET http://localhost:3001/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzQzNTM1MDI1LCJleHAiOjE3NDM1Mzg2MjV9.Hk2SaynvHZihkSYHSJ3UqBWoyRRDLVXoI1AI3Ije17g
+
+###
+GET http://localhost:3001/stores
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzQzNTM1MDI1LCJleHAiOjE3NDM1Mzg2MjV9.Hk2SaynvHZihkSYHSJ3UqBWoyRRDLVXoI1AI3Ije17g
+
+###
+GET http://localhost:3001/admin/stats
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzQzNTM1MDI1LCJleHAiOjE3NDM1Mzg2MjV9.Hk2SaynvHZihkSYHSJ3UqBWoyRRDLVXoI1AI3Ije17g
+
+###
+GET http://localhost:3001/stores/search?query=555
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzQzNTMwMTk2LCJleHAiOjE3NDM1MzM3OTZ9.pTAMszhP6CR6VES05m3zVi1B6tYylRcsd0O5n2Vqwig
+
+
+###
+POST http://localhost:3001/ratings
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlVzZXIiLCJpYXQiOjE3NDM1MzU1MjMsImV4cCI6MTc0MzUzOTEyM30.L6XdBDrf5MZ6CV48Zh_pODK4PVJqRAlG8RbjxyWnM7w
+
+   { "user_id": 7, "store_id": 5, "rating": 2 }
+
+###
+PUT http://localhost:3001/ratings
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6IlVzZXIiLCJpYXQiOjE3NDM1MzU1MjMsImV4cCI6MTc0MzUzOTEyM30.L6XdBDrf5MZ6CV48Zh_pODK4PVJqRAlG8RbjxyWnM7w
+
+ {
+    "store_id": 5,
+    "rating": 4
+  }
+
+
+###
+GET http://localhost:3001/store/ratings
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Niwicm9sZSI6IlN0b3JlT3duZXIiLCJpYXQiOjE3NDM1MzE4MTIsImV4cCI6MTc0MzUzNTQxMn0.aKYUebmyOppYvVknngHf0DFsbMxqzHbVTGcBcutuLQs
+
+
+###
+GET http://localhost:3001/store/average-rating
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Niwicm9sZSI6IlN0b3JlT3duZXIiLCJpYXQiOjE3NDM1MzE4MTIsImV4cCI6MTc0MzUzNTQxMn0.aKYUebmyOppYvVknngHf0DFsbMxqzHbVTGcBcutuLQs
