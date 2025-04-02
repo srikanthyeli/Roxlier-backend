@@ -65,7 +65,7 @@ const createTables = async () => {
 
 const generateToken = (user) => {
   return jwt.sign({ id: user.id, role: user.role }, "My_Secrete_Token", {
-    expiresIn: "1h",
+    expiresIn: "40h",
   });
 };
 
